@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     var english =Number(prompt("Entermarks for English (out of 100"));
+     var Physics =Number(prompt("Entermarks for Physics (out of 100"));
+     var math =Number(prompt("Entermarks for Math (out of 100"));
+     var computer =Number(prompt("Entermarks for computer (out of 100"));
+     var science =Number(prompt("Entermarks for science (out of 100"));
+     
+     var totalMarks =500;
+     var obtainedMarks =english + Physics + math + computer +science;
+
+     var percentage =(obtainedMarks/totalMarks)*100;
+
+     var grade = "";
+     if (percentage >=90) {
+        grade ="A";
+     }
+     else if (percentage >=80) {
+        grade ="B";
+     }
+     else if (percentage >=70) {
+        grade ="C";
+     }
+     else if (percentage >=60) {
+        grage ="D";
+     }
+     else if (percentage >=50) {
+        grage ="E";
+     }
+     else  {
+        grade ="fail";
+     }
+     
+     alert(
+    "Total Marks: " + totalMarks + "\n" +
+    "Obtained Marks: " + obtainedMarks + "\n" +
+    "Percentage: " + percentage + "%\n" +
+    "Your Grade: " + grade
+);
+
+
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
